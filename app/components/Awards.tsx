@@ -24,6 +24,7 @@ const AwardCard = ({
     logo?: string;
     logoDark?: string;
     logoSecondary?: string;
+    logos?: string[];
   };
   index: number;
   category: string;
@@ -122,13 +123,28 @@ const AwardCard = ({
       />
 
       <div className="relative z-10 flex flex-col items-center w-full">
-        {!darkMode && award.logoDark ? (
-          <Image src={award.logoDark} alt={`${award.event} logo`} width={80} height={80} className="h-20 w-auto" />
-        ) : (
-          award.logo && (
-            <Image src={award.logo} alt={`${award.event} logo`} width={80} height={80} className="h-20 w-auto" />
-          )
-        )}
+        <div className="flex items-center gap-2">
+          {!darkMode && award.logoDark ? (
+            <Image src={award.logoDark} alt={`${award.event} logo`} width={80} height={80} className="h-20 w-auto" />
+          ) : (
+            <>
+              {award.logo && (
+                <Image src={award.logo} alt={`${award.event} logo`} width={80} height={80} className="h-20 w-auto" />
+              )}
+              {award.logos &&
+                award.logos.map((imgLogo, idx) => (
+                  <Image
+                    key={idx}
+                    src={imgLogo}
+                    alt={`${award.event} logo ${idx + 1}`}
+                    width={80}
+                    height={80}
+                    className="h-20 w-auto"
+                  />
+                ))}
+            </>
+          )}
+        </div>
         {award.logoSecondary && (
           <Image src={award.logoSecondary} alt={`${award.event} secondary logo`} width={48} height={48} className="h-12 w-auto" />
         )}

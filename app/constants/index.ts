@@ -22,6 +22,8 @@ const WiceLogo = "/assets/awards/WiceLogo.png";
 const NMSTLogo = "/assets/awards/NMSTLogo.png";
 const NSFLogo = "/assets/awards/NSFLogo.png";
 const BSALogo = "/assets/awards/BSALogo.png";
+const GOBBLogo = "/assets/awards/GOBBLogo.png";
+const GOBLogo = "/assets/awards/GOBLogo.png";
 
 // Project images (from public/assets/projects/)
 const DEMON71 = "/assets/projects/DEMON71.png";
@@ -135,16 +137,20 @@ export const EXPERIENCES = [
   },
 ];
 
-export const AWARDS: Record<string, Array<{
-  year: string;
-  position: string;
-  event: string;
-  description: string;
-  link: string;
-  logo?: string;
-  logoDark?: string;
-  logoSecondary?: string;
-}>> = {
+export const AWARDS: Record<
+  string,
+  Array<{
+    year: string;
+    position: string;
+    event: string;
+    description: string;
+    link: string;
+    logo?: string;
+    logoDark?: string;
+    logoSecondary?: string;
+    logos?: string[];
+  }>
+> = {
   National: [
     {
       year: "2026",
@@ -160,7 +166,7 @@ export const AWARDS: Record<string, Array<{
       event: "47th National Science & Technology Week 2026",
       description: `As Team DEMON71 from Alif Subhan Chowdhury Government College, we achieved Special 5th Place at the 47th National Science & Technology Week 2026 National Science Fair with our DEMON71 second-generation defense rover. We competed at the National Science & Technology Complex, Agargaon, Dhaka from 14–16 June 2026. The event was organized by the National Museum of Science and Technology and the Ministry of Science and Technology, Bangladesh.`,
       link: "#",
-      logo: NMSTLogo,
+      logos: [NMSTLogo, GOBLogo],
     },
     {
       year: "2025",
@@ -169,7 +175,7 @@ export const AWARDS: Record<string, Array<{
       description: `As a member of Udvaboni Biggan Club, Bahubal, we participated in the National Science Fest 2025 with our developed Autonomous Home & Fire Fighting Robot. Our project was selected among the Top 10 finalists in the competition, which took place at the Bangladesh Shishu Academy, Dhaka on 11 October 2025. The event was organized by Phulkuri Ashar in collaboration with the Bangladesh Shishu Academy.`,
       link: "#",
       logo: NSFLogo,
-    },         
+    },
   ],
   "Division,District,Upazila": [
     {
@@ -178,7 +184,7 @@ export const AWARDS: Record<string, Array<{
       event: "47th National Science & Technology Fair 2026",
       description: `As Team DEMON71 from Alif Subhan Chowdhury Government College, we achieved 1st Place at the Sylhet Divisional Level of the 47th National Science & Technology Fair 2026 with our DEMON71 second-generation defense rover. We competed at the Mohammad Ali Gymnasium, Rikabibazar, Sylhet from 15–17 May 2026.`,
       link: "#",
-      logo: NMSTLogo,
+      logos: [NMSTLogo, GOBLogo],
     },
     {
       year: "2026",
@@ -186,7 +192,7 @@ export const AWARDS: Record<string, Array<{
       event: "47th National Science & Technology Fair 2026",
       description: `As Team DEMON71 from Alif Subhan Chowdhury Government College, we achieved 1st Place at the Habiganj District Level of the 47th National Science & Technology Fair 2026 with our DEMON71 second-generation defense rover. We competed at the Zilla Parishad Auditorium, Habiganj from 18–20 April 2026.`,
       link: "#",
-      logo: NMSTLogo,
+      logos: [NMSTLogo, GOBLogo],
     },
     {
       year: "2026",
@@ -194,7 +200,7 @@ export const AWARDS: Record<string, Array<{
       event: "47th National Science & Technology Fair 2026",
       description: `As Team DEMON71 from Alif Subhan Chowdhury Government College, we achieved 1st Place at the Bahubal Upazila Level of the 47th National Science & Technology Fair 2026 with our DEMON71 second-generation defense rover. We competed at the Upazila Parishad Auditorium, Bahubal on 15 April 2026.`,
       link: "#",
-      logo: NMSTLogo,
+      logos: [NMSTLogo, GOBLogo],
     },
     {
       year: "2022",
@@ -202,7 +208,7 @@ export const AWARDS: Record<string, Array<{
       event: "National Children's Award Competition 2022",
       description: `Awarded 1st Place in the National Children's Award Competition 2022 (Upazila Level) in the Science Project category on 11 July 2023 at Bahubal, Habiganj, Bangladesh. The competition was organized by the Bangladesh Shishu Academy, Government of the People's Republic of Bangladesh.`,
       link: "#",
-      logo: BSALogo,
+      logos: [BSALogo, GOBBLogo],
     },
     {
       year: "2022",
@@ -210,9 +216,9 @@ export const AWARDS: Record<string, Array<{
       event: "National Children's Award Competition 2022",
       description: `Awarded 2nd Place in the National Children's Award Competition 2022 (District Level) in the Science Project category on 16 July 2023 at Habiganj, Bangladesh. The competition was organized by the Bangladesh Shishu Academy, Habiganj, under the Bangladesh Shishu Academy, Government of the People's Republic of Bangladesh.`,
       link: "#",
-      logo: BSALogo,
-    }
-  ]
+      logos: [BSALogo, GOBBLogo],
+    },
+  ],
 };
 
 export const CONTACT = {

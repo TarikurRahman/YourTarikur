@@ -43,7 +43,7 @@ const Loader = ({ setLoading }: { setLoading: (v: boolean) => void }) => {
         >
           <Image
             src="/assets/avater.png"
-            alt="Tarikur Rahman"
+            alt="Tarikur Rahman - Robotics & IoT Engineer Avatar"
             fill
             quality={80}
             className="object-cover"

@@ -77,7 +77,7 @@ const Hero = () => {
               >
                 <Image
                   src="/assets/avater2.png"
-                  alt="Tarikur Rahman"
+                  alt="Tarikur Rahman - Robotics & IoT Engineer Avatar"
                   fill
                   quality={80}
                   className="object-cover"

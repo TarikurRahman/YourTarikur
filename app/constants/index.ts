@@ -37,6 +37,9 @@ const UBCB2 = "/assets/projects/UBCB2.jpg";
 
 export const HERO_CONTENT = `I am a multidisciplinary inventor and tech researcher driven by the passion to turn abstract imagination into physical reality. From developing autonomous robotic platforms and training custom AI surveillance models to engineering high-performance web applications, I create systems that bridge the gap between intelligent hardware and software. Proficient across C++, Python, and full-stack web architectures, I don't just write code—I build connected solutions with absolute precision. Let's build something extraordinary together.`;
 
+export const SITE_DESCRIPTION =
+  "Tarikur Rahman is a Bangladeshi Robotics Inventor, System Architect, and Tech Researcher specializing in autonomous defense systems, tactical rovers (PHANTOM-X), industrial firefighting robotics (PHOENIX-F1), and embedded IoT ecosystems.";
+
 export const SKILLS = [
   {
     title: "Hardware & Robotics",

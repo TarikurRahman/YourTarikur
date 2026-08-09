@@ -18,7 +18,7 @@ const StickyAvatar = () => {
     >
       <Image
         src="/assets/avater.png"
-        alt=""
+        alt="Tarikur Rahman - Robotics & IoT Engineer Avatar"
         width={24}
         height={24}
         quality={80}

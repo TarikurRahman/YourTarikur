@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /llms.txt
+
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+
+Sitemap: https://yourtarikur.vercel.app/sitemap.xml

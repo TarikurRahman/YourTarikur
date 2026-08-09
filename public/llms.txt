@@ -1,0 +1,28 @@
+# Tarikur Rahman
+
+## Robotics Inventor & System Architect
+
+Tarikur Rahman is a robotics inventor, systems thinker, and technology researcher based in Bangladesh. He is known for building intelligent robotics systems, tactical defense rover concepts, and IoT-driven automation projects that bridge engineering, design, and real-world problem solving.
+
+He currently works with Team DEMON71 and has contributed to projects spanning robotics prototyping, embedded systems, autonomous platforms, and digital innovation.
+
+## Key Projects
+- PHANTOM-X — Tactical defense rover platform focused on robotics innovation and field-based experimentation.
+- PHOENIX-F1 — Firefighting rover concept built around safety, automation, and engineering problem solving.
+- AETHER-H1 — Global IoT automation project designed for connected systems and intelligent deployment scenarios.
+- SHEPHERD-X — Real-time safety tracking and monitoring solution for advanced robotics and field operations.
+
+## Awards
+- WICE 2026 Gold Medalist
+- 47th National Science Fair Champion
+
+## Professional Links
+- Website: https://yourtarikur.vercel.app/
+- GitHub: https://github.com/tarikurrahmanbd
+- ORCID: https://orcid.org/0009-0007-1408-9826
+- Facebook: https://www.facebook.com/tarikurrahman08/
+- Instagram: https://www.instagram.com/tarikurrahman08/
+- Email: tarikurrahman2008@gmail.com
+
+## Summary
+Tarikur Rahman combines robotics engineering, systems architecture, and innovation leadership to build intelligent hardware and software experiences. His work centers on autonomous robotics, tactical defense platforms, IoT applications, and future-focused technology development.

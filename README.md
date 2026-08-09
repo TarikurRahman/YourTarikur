@@ -5,7 +5,7 @@
   **A futuristic, high-performance web application designed for interactive visual showcase, automation, and defense robotics engineering.**
 
   [![Live Website](https://img.shields.io/badge/Live_Site-yourtarikur.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://yourtarikur.vercel.app)
-  [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TarikurRahmanBD/YourTarikur)
+  [![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/TarikurRahman/YourTarikur)
   [![Framework](https://img.shields.io/badge/Next.js-14+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/)
   [![Language](https://img.shields.io/badge/TypeScript-98.9%25-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 

@@ -36,7 +36,7 @@
 ### **Tarikur Rahman**
 *Full-Stack Engineer | AI Automation Developer | Defense Robotics Enthusiast*
 
-[![GitHub Profile](https://img.shields.io/badge/GitHub-TarikurRahman-181717?style=flat-square&logo=github)](https://github.com/TarikurRahmanBD)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-TarikurRahman-181717?style=flat-square&logo=github)](https://github.com/TarikurRahman)
 [![Portfolio](https://img.shields.io/badge/Website-YourTarikur-blue?style=flat-square&logo=googlechrome)](https://yourtarikur.vercel.app)
 
 ***"Engineering future-ready intelligent automation and high-impact web architectures."***

@@ -79,6 +79,7 @@ const Hero = () => {
                   src="/assets/avater2.png"
                   alt="Tarikur Rahman - Robotics & IoT Engineer Avatar"
                   fill
+                  sizes="(max-width: 768px) 80px, 96px"
                   quality={80}
                   className="object-cover"
                   priority

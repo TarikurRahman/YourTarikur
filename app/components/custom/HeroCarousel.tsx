@@ -44,11 +44,11 @@ const HeroCarousel = () => {
         src={imgSrc}
         alt={title}
         fill
+        sizes="(max-width: 768px) 100vw, 400px"
         quality={80}
         className="object-cover object-center rounded-t-2xl rounded-b-3xl"
         loading={isPriority ? "eager" : "lazy"}
         priority={isPriority}
-        sizes="(max-width: 768px) 100vw, 50vw"
       />
       <div
         className="absolute bottom-0 w-full h-20 rounded-b-2xl"

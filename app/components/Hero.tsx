@@ -78,13 +78,14 @@ const Hero = () => {
                 <Image
                   src="/assets/avater2.png"
                   alt="Tarikur Rahman - Robotics & IoT Engineer Avatar"
-                  fill
-                  sizes="(max-width: 768px) 80px, 96px"
+                  width={80}
+                  height={80}
                   quality={80}
                   className="object-cover"
                   priority={true}
                   loading="eager"
                   fetchPriority="high"
+                  unoptimized={false}
                 />
               </motion.div>
               <motion.div

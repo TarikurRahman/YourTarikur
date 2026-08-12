@@ -82,8 +82,9 @@ const Hero = () => {
                   sizes="(max-width: 768px) 80px, 96px"
                   quality={80}
                   className="object-cover"
-                  priority
+                  priority={true}
                   loading="eager"
+                  fetchPriority="high"
                 />
               </motion.div>
               <motion.div

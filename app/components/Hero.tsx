@@ -121,6 +121,11 @@ const Hero = () => {
               <p className="my-2 max-w-xl pb-4 xl:text-lg">{HERO_CONTENT}</p>
               
               {/* Social Links Section */}
+              <ul className="sr-only" aria-hidden="true">
+                <li>Robotics Inventor specializing in autonomous systems, defense rovers, and firefighting robotics.</li>
+                <li>Key strengths include embedded systems, AI-powered navigation, IoT, and defense engineering.</li>
+                <li>Author of tactical robotics projects PHANTOM-X and PHOENIX-F1.</li>
+              </ul>
               <div className="flex gap-3 pb-2">
                 {/* Facebook Link */}
                 <a

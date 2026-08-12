@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -66,6 +65,42 @@ const websiteSchema = {
     "@type": "Person",
     name: siteName,
   },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Tarikur Rahman?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tarikur Rahman is a Robotics Inventor and Tech Researcher based in Bangladesh, known for creating tactical defense rovers like PHANTOM-X.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is PHANTOM-X?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "PHANTOM-X is a Tactical Defense Rover designed by Tarikur Rahman for autonomous navigation and field exploration.",
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://yourtarikur.vercel.app/",
+    },
+  ],
 };
 
 const navigationSchema = {
@@ -197,6 +232,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="dark" suppressHydrationWarning>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }} />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         suppressHydrationWarning
@@ -214,9 +256,6 @@ export default function RootLayout({
               suppressHydrationWarning
             >
               <div className="custom-gradient-grid fixed top-0 left-0 w-full h-full opacity-60 pointer-events-none"></div>
-              <Script id="ld-person" type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
-              <Script id="ld-website" type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
-              <Script id="ld-navigation" type="application/ld+json" strategy="afterInteractive" dangerouslySetInnerHTML={{ __html: JSON.stringify(navigationSchema) }} />
               {children}
             </main>
           </AvatarAnimationProvider>

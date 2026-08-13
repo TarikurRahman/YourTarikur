@@ -11,12 +11,6 @@
 
 </div>
 
----
-<img width="1269" height="714" alt="Screenshot 2026-08-12 004126" src="https://github.com/user-attachments/assets/9eac8c7d-099e-4d2d-9fea-132904069114" />
----
-
-<img width="1920" height="7490" alt="screencapture-yourtarikur-vercel-app-2026-08-13-18_45_33" src="https://github.com/user-attachments/assets/fc080db4-6ba5-459c-aaa8-b9a96806654d" />
-
 
 ## 🌟 Overview
 

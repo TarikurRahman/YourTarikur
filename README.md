@@ -19,7 +19,6 @@
 
 **YourTarikur** is an advanced digital identity and showcase system crafted with Next.js, React, and TypeScript. Built with precision, top-tier UI/UX standards, and modern web standards, this platform reflects cutting-edge technology integrations in **AI Automation**, **Robotics**, and **Interactive Web Graphics**.
 
----
 
 ## 🔥 Key Features
 

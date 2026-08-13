@@ -11,6 +11,22 @@
 
 </div>
 
+<!-- Website Full Preview -->
+<div align="center">
+
+  ## 🖥️ Live Preview
+
+  <a href="https://yourtarikur.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_VISIT_LIVE_SITE-yourtarikur.vercel.app-0070f3?style=for-the-badge&logo=vercel&logoColor=white" alt="Visit Live Site" />
+  </a>
+
+  <br /><br />
+
+  <a href="https://yourtarikur.vercel.app/" target="_blank">
+    <img src="https://github.com/user-attachments/assets/9c0d4153-ad90-42a0-be8c-a4aa5f1829a1" alt="YourTarikur Full Website Preview" width="100%" />
+  </a>
+
+</div>
 
 ## 🌟 Overview
 

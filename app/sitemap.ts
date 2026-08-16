@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export const dynamic = "force-static";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://yourtarikur.vercel.app";
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const baseUrl = "https://yourtarikur.vercel.app/";
 
   return [
     {
@@ -13,31 +13,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/projects/phantom-x`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/projects/phoenix-f1`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/experience`,
+      url: `${baseUrl}projects/PHANTOM-X`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/skills`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/awards`,
+      url: `${baseUrl}projects/PHOENIX-F1`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

@@ -17,12 +17,16 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: siteName,
+  image: "https://yourtarikur.vercel.app/assets/avater2.svg",
   jobTitle: "System Architect & Robotics Inventor",
   url: baseUrl,
   sameAs: [
     "https://www.linkedin.com/in/tarikurrahmanbd/",
     "https://github.com/tarikurrahmanbd",
     "https://yourtarikur.netlify.app/",
+    "https://www.facebook.com/tarikurrahmanbd",
+    "https://x.com/tarikurrahmanbd",
+    "https://www.instagram.com/tarikurrahmanbd/",
   ],
   description: siteDescription,
   affiliation: {
@@ -51,6 +55,26 @@ const personSchema = {
     "Mirpur, Dhaka",
     "Bangladesh",
     "Next.js",
+  ],
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "Robotics Research & Systems Design",
+      credentialCategory: "Skill",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Tarikur Rahman Portfolio",
+      },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      name: "Autonomous Robotics Engineer",
+      credentialCategory: "Occupation",
+      recognizedBy: {
+        "@type": "Organization",
+        name: "Tarikur Rahman Portfolio",
+      },
+    },
   ],
 };
 

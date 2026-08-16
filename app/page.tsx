@@ -33,6 +33,19 @@ export default function Home() {
           <Navbar />
           <div className="pt-16 sm:pt-20" />
 
+          <nav aria-label="Main navigation" className="sr-only">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/#skills">Skills</a></li>
+              <li><a href="/#experience">Experience</a></li>
+              <li><a href="/projects/PHOENIX-F1">PHOENIX-F1</a></li>
+              <li><a href="/projects/PHANTOM-X">PHANTOM-X</a></li>
+              <li><a href="/#awards">Awards</a></li>
+              <li><a href="/#gallery">Gallery</a></li>
+              <li><a href="/#contact">Contact</a></li>
+            </ul>
+          </nav>
+
           <Hero />
 
           <motion.div
@@ -40,12 +53,12 @@ export default function Home() {
             initial="hidden"
             animate={loading ? "hidden" : "visible"}
           >
-            <div id="skills"><Skills /></div>
-            <div id="experience"><Experience SectionTopic={EXPERIENCES} title="Experience" /></div>
+            <section id="skills"><Skills /></section>
+            <section id="experience"><Experience SectionTopic={EXPERIENCES} title="Experience" /></section>
             <div className="h-28"></div>
-            <div id="awards"><Awards /></div>
+            <section id="awards"><Awards /></section>
             <section id="gallery"><Gallery /></section>
-            <div id="contact"><Contact /></div>
+            <section id="contact"><Contact /></section>
           </motion.div>
         </motion.div>
       )}

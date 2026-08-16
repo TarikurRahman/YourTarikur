@@ -127,14 +127,14 @@ const navigationSchema = {
     {
       "@type": "SiteNavigationElement",
       position: 1,
-      name: "Projects",
-      url: `${baseUrl}/#projects`,
+      name: "Home",
+      url: `${baseUrl}/`,
     },
     {
       "@type": "SiteNavigationElement",
       position: 2,
-      name: "What I Do",
-      url: `${baseUrl}/#what-i-do`,
+      name: "Skills",
+      url: `${baseUrl}/#skills`,
     },
     {
       "@type": "SiteNavigationElement",
@@ -145,19 +145,31 @@ const navigationSchema = {
     {
       "@type": "SiteNavigationElement",
       position: 4,
+      name: "PHOENIX-F1",
+      url: `${baseUrl}/projects/PHOENIX-F1`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 5,
+      name: "PHANTOM-X",
+      url: `${baseUrl}/projects/PHANTOM-X`,
+    },
+    {
+      "@type": "SiteNavigationElement",
+      position: 6,
       name: "Awards",
       url: `${baseUrl}/#awards`,
     },
     {
       "@type": "SiteNavigationElement",
-      position: 5,
+      position: 7,
       name: "Gallery",
       url: `${baseUrl}/#gallery`,
     },
     {
       "@type": "SiteNavigationElement",
-      position: 6,
-      name: "Get in Touch",
+      position: 8,
+      name: "Contact",
       url: `${baseUrl}/#contact`,
     },
   ],

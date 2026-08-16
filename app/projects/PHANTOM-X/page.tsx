@@ -5,8 +5,8 @@ import { ShieldAlert, Cpu, Radar, Award, CheckCircle, ArrowRight, Eye, Radio, Za
 import Image from 'next/image';
 
 const projectUrl = 'https://yourtarikur.vercel.app/projects/PHANTOM-X';
-const projectTitle = 'PHANTOM-X | Tactical Defense & Field Rover by Tarikur Rahman';
-const projectDescription = 'In-depth overview of PHANTOM-X, an advanced tactical defense and autonomous field rover engineered by Tarikur Rahman.';
+const projectTitle = 'PHANTOM-X | Tactical Defense & Autonomous Field Rover by Tarikur Rahman';
+const projectDescription = 'Detailed project overview of PHANTOM-X, an advanced tactical defense and autonomous field rover engineered by Tarikur Rahman.';
 
 export const metadata: Metadata = {
   title: projectTitle,
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     'PHANTOM-X',
     'Tactical Defense Rover',
     'Tarikur Rahman PHANTOM-X',
+    'Autonomous Rover',
     'Robotics Research Bangladesh',
   ],
   alternates: {
@@ -57,6 +58,7 @@ const structuredData = {
     'PHANTOM-X',
     'Tactical Defense Rover',
     'Tarikur Rahman PHANTOM-X',
+    'Autonomous Rover',
     'Robotics Research Bangladesh',
   ],
   url: projectUrl,

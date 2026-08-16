@@ -6,7 +6,7 @@ import { Flame, ShieldAlert, Cpu, Award, Code, CheckCircle, ArrowRight } from 'l
 
 const projectUrl = 'https://yourtarikur.vercel.app/projects/PHOENIX-F1';
 const projectTitle = 'PHOENIX-F1 | Autonomous Firefighting Defense Rover by Tarikur Rahman';
-const projectDescription = 'Comprehensive project details of PHOENIX-F1, an autonomous firefighting defense rover designed for hazardous emergency operations by Tarikur Rahman.';
+const projectDescription = 'Official project specifications of PHOENIX-F1, an autonomous firefighting defense rover designed for hazardous operations by Tarikur Rahman.';
 
 export const metadata: Metadata = {
   title: projectTitle,
@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     'PHOENIX-F1',
     'Firefighting Defense Rover',
     'Tarikur Rahman PHOENIX-F1',
-    'Autonomous Firefighting Robotics Bangladesh',
+    'Firefighting Robotics',
+    'Robotics Bangladesh',
   ],
   alternates: {
     canonical: projectUrl,
@@ -57,7 +58,8 @@ const structuredData = {
     'PHOENIX-F1',
     'Firefighting Defense Rover',
     'Tarikur Rahman PHOENIX-F1',
-    'Autonomous Firefighting Robotics Bangladesh',
+    'Firefighting Robotics',
+    'Robotics Bangladesh',
   ],
   url: projectUrl,
   about: 'Autonomous firefighting defense rover designed for hazardous emergency operations.',

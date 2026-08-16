@@ -1,11 +1,75 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '../../components/Navbar';
 import { Flame, ShieldAlert, Cpu, Award, Code, CheckCircle, ArrowRight } from 'lucide-react';
 
+const projectUrl = 'https://yourtarikur.vercel.app/projects/PHOENIX-F1';
+const projectTitle = 'PHOENIX-F1 | Autonomous Firefighting Defense Rover by Tarikur Rahman';
+const projectDescription = 'Comprehensive project details of PHOENIX-F1, an autonomous firefighting defense rover designed for hazardous emergency operations by Tarikur Rahman.';
+
+export const metadata: Metadata = {
+  title: projectTitle,
+  description: projectDescription,
+  keywords: [
+    'PHOENIX-F1',
+    'Firefighting Defense Rover',
+    'Tarikur Rahman PHOENIX-F1',
+    'Autonomous Firefighting Robotics Bangladesh',
+  ],
+  alternates: {
+    canonical: projectUrl,
+  },
+  openGraph: {
+    title: projectTitle,
+    description: projectDescription,
+    url: projectUrl,
+    siteName: 'Tarikur Rahman',
+    type: 'website',
+    images: [
+      {
+        url: 'https://yourtarikur.vercel.app/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: projectTitle,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: projectTitle,
+    description: projectDescription,
+    images: ['https://yourtarikur.vercel.app/og-image.png'],
+  },
+};
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: 'PHOENIX-F1',
+  description: projectDescription,
+  creator: {
+    '@type': 'Person',
+    name: 'Tarikur Rahman',
+    url: 'https://github.com/tarikurrahmanbd',
+  },
+  keywords: [
+    'PHOENIX-F1',
+    'Firefighting Defense Rover',
+    'Tarikur Rahman PHOENIX-F1',
+    'Autonomous Firefighting Robotics Bangladesh',
+  ],
+  url: projectUrl,
+  about: 'Autonomous firefighting defense rover designed for hazardous emergency operations.',
+};
+
 export default function PhoenixF1Page() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navbar />
       <div className="relative min-h-screen text-[#111827] dark:text-[#f8fafc] transition-colors duration-500">
         {/* Background radial gradient overlay matching global design */}

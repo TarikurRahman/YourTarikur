@@ -1,11 +1,75 @@
-﻿import React from 'react';
+﻿import type { Metadata } from 'next';
+import React from 'react';
 import Navbar from '../../components/Navbar';
 import { ShieldAlert, Cpu, Radar, Award, CheckCircle, ArrowRight, Eye, Radio, Zap, Target } from 'lucide-react';
 import Image from 'next/image';
 
+const projectUrl = 'https://yourtarikur.vercel.app/projects/PHANTOM-X';
+const projectTitle = 'PHANTOM-X | Tactical Defense & Field Rover by Tarikur Rahman';
+const projectDescription = 'In-depth overview of PHANTOM-X, an advanced tactical defense and autonomous field rover engineered by Tarikur Rahman.';
+
+export const metadata: Metadata = {
+  title: projectTitle,
+  description: projectDescription,
+  keywords: [
+    'PHANTOM-X',
+    'Tactical Defense Rover',
+    'Tarikur Rahman PHANTOM-X',
+    'Robotics Research Bangladesh',
+  ],
+  alternates: {
+    canonical: projectUrl,
+  },
+  openGraph: {
+    title: projectTitle,
+    description: projectDescription,
+    url: projectUrl,
+    siteName: 'Tarikur Rahman',
+    type: 'website',
+    images: [
+      {
+        url: 'https://yourtarikur.vercel.app/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: projectTitle,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: projectTitle,
+    description: projectDescription,
+    images: ['https://yourtarikur.vercel.app/og-image.png'],
+  },
+};
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: 'PHANTOM-X',
+  description: projectDescription,
+  creator: {
+    '@type': 'Person',
+    name: 'Tarikur Rahman',
+    url: 'https://github.com/tarikurrahmanbd',
+  },
+  keywords: [
+    'PHANTOM-X',
+    'Tactical Defense Rover',
+    'Tarikur Rahman PHANTOM-X',
+    'Robotics Research Bangladesh',
+  ],
+  url: projectUrl,
+  about: 'Advanced tactical defense and autonomous field rover built for high-risk reconnaissance and field operations.',
+};
+
 export default function PhantomXPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navbar />
       <div className="relative min-h-screen text-[#111827] dark:text-[#f8fafc] transition-colors duration-500">
         <div className="custom-gradient-grid pointer-events-none fixed inset-0 z-0 opacity-40 dark:opacity-60" />
